@@ -47,13 +47,13 @@ function UserValidation(index){
         playerArray[index]= window. prompt("Choose Rock , Paper or Scissors").toLowerCase();
         switch (playerArray[index]) {
             case "rock": 
-                console.log("Player Array: "+playerArray[index]);
+                console.log("Player: "+playerArray[index]);
                 break loop;
             case "paper": 
-                console.log("Player Array: "+playerArray[index]);
+                console.log("Player: "+playerArray[index]);
                 break loop;
             case "scissors":
-                console.log("Player Array: "+playerArray[index]);
+                console.log("Player: "+playerArray[index]);
                 break loop;
             default: alert("Please enter a valid choice");
         }
@@ -66,7 +66,7 @@ function game()
     {
         computerArray[i]=computerPlay(computer_options);
         UserValidation(i);
-        console.log("Computer Array: "+computerArray[i]);
+        console.log("Computer: "+computerArray[i]);
         console.log(gameRound(computerArray[i],playerArray[i]));  
     }
 }
